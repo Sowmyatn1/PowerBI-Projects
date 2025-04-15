@@ -1,0 +1,76 @@
+SAT Analysis Dashboard Summary
+Background of SAT
+The SAT (Scholastic Assessment Test) is a standardized test widely used for college admissions in the United States. It evaluates students' readiness for higher education through sections such as Math, Reading, and Writing. Tracking SAT scores helps educators identify areas of strength and improvement at both the individual and institutional levels.
+
+Dashboard Overview
+This SAT Analysis Dashboard provides a comprehensive overview of SAT scores across schools and districts in Illinois. By integrating data from multiple sources, the dashboard highlights key metrics such as participation rates, average scores, and school rankings. The target audience includes:
+•	School Administrators to monitor performance and participation.
+•	District Leaders to compare schools within their jurisdiction.
+•	Education Policymakers to identify underperforming demographics and allocate resources effectively.
+•	Parents and Students seeking insights into school rankings and average scores.
+
+Data Cleaning and Transformation
+To ensure the data was accurate, consistent, and usable for analysis, the following steps were performed:
+•	Data Cleaning:
+o	Removed duplicates and unnecessary columns to streamline the dataset.
+o	Addressed missing values in critical columns such as School name ,SAT scores, participation rates, and school details.
+o	Filtered out unnecessary records (e.g., Elementary and Middle schools).
+•	Data Transformation:
+o	Aggregated SAT scores by school and district.
+o	Unpivoted the data to column format
+o	Created calculated columns for metrics like Participation Percentage, Above/Below Proficiency Scores, and School Rank.
+o	Used Power Query to shape the dataset into a tabular format suitable for Power BI.
+
+DAX Queries and Measures
+To power dynamic visuals and provide accurate insights, several DAX queries and measures were implemented:
+•	Rank Calculations:
+o	Created a measure to rank schools based on total SAT scores dynamically, considering slicer selections.
+•	Derived Metrics:
+o	Participation percentage: (Total Enrolled Students Participated / Total Enrolled) * 100.
+o	Comparison between school SAT scores and state averages.
+•	Custom Calculations:
+o	Separate measures for Math and Reading proficiency to highlight above/below-average performance.
+o	Calculations for demographic-based SAT score percentages.
+
+Visualizations Used
+The dashboard uses a variety of visualizations to present data effectively:
+1.	Scorecards:
+o	Display key metrics such as:
+♣	Rank of the selected school.
+♣	Total Enrolled Students.
+♣	Participation Percentage.
+♣	SAT Scores vs. State Average.
+♣	Math and Reading scores, along with proficiency breakdowns.
+
+2.	Tables:
+o	A state snapshot showing school names, districts, cities, and SAT scores.
+o	A district snapshot for detailed school comparisons within a selected district.
+
+3.	100% Stacked Bar Chart:
+o	Displays demographic breakdowns and SAT proficiency percentages.
+
+4.	Slicers:
+o	Dropdown filters for District and School Name to allow users to focus on specific data.
+
+Impact and Usefulness
+•	This dashboard empowers decision-makers by consolidating critical metrics in a single interface.
+•	It identifies underperforming schools and helps prioritize interventions to improve student outcomes.
+•	By highlighting demographic trends, it enables targeted strategies to close achievement gaps.
+•	The rank and proficiency metrics provide a benchmark for schools to assess their performance relative to peers.
+This dashboard provides a holistic view of SAT performance at the school, district, and state levels. Key benefits include:
+•	Performance Tracking:
+o	School Administrators: Gain insights into their school's performance compared to other schools in the district and state.
+o	District Officials: Identify high-performing schools and those needing additional resources or intervention.
+o	Policymakers: Analyze trends and gaps in performance at a state-wide level to inform policy decisions.
+•	Resource Allocation:
+o	Helps decision-makers prioritize funding and resources for schools or demographics that require improvement.
+o	Enables educators to allocate attention to areas where students struggle, such as Math or Reading proficiency.
+•	Targeted Interventions:
+o	Highlights disparities in performance by demographic groups, allowing for more focused and equitable support strategies.
+o	Pinpoints participation rates to encourage greater student involvement in SAT testing.
+•	Benchmarking and Comparisons:
+o	Allows schools to compare their performance with district and state averages, fostering healthy competition and improvement.
+o	The ranking system provides benchmarks for continuous improvement efforts.
+•	Data-Driven Decisions:
+o	Empowers stakeholders to make informed decisions based on accurate, cleaned, and transformed data.
+o	Provides actionable insights to improve student outcomes, participation, and overall school rankings.
